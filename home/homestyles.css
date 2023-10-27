@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(43, 45, 53);
+    font-weight: 50;
+}   
+
+body {
+    color: #fff;
+}
+
+.main {
+    width:100%;
+    height:100vh;
+}
+
+.typewriter {
+    height:100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vmax;   
+    line-height: 15vmax;
+    color: #fff;
+    padding-top:15vh;
+    padding-bottom: 27vh;
+    text-align: left;
+    position: absolute;
+    overflow: hidden;
+}
+
+.typewriter h1 {
+    margin-left: 3vw;
+}
+
+#phrase{
+    z-index: 2;
+    color:rgb(243, 188, 9);
+    text-align: left;
+}
+
+@keyframes typinganimate{
+    0%  {opacity: 0%;}
+    50%{opacity: 0%}
+    51%{opacity: 100%}
+    100%{opacity: 100%}
+}
+
+#cursor{
+    display: inline;
+    animation-name:typinganimate;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+}
+
+.goatwrapper {
+    background-color: rgba(1,1,1,0);
+    position:absolute;
+    overflow: hidden;
+    height:100%;
+    width:100%;
+    aspect-ratio: 1/1;
+}
+
+.goatcontent {
+    background-color: rgba(1,1,1,0);
+    position:relative;
+    display: block;
+    left: 47%;
+    top:22%;
+    z-index:2;
+    
+}
+
+.goatcontent img {
+    background-color: rgba(1,1,1,0);
+    transform: rotate(5deg);
+    height: 45vmax;  
+    object-fit: contain;
+    opacity: 1;
+}
+
+.sec2 {
+    display: grid;
+    grid-gap: 2vmax;
+    grid-template-columns: 53vmax 34vmax;
+    grid-template-rows: auto;
+    z-index: 3;
+    background-color: rgb(243, 188, 9);    
+    padding: 10vh 5vw;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 0.3vmax;
+    width: 100%;
+}
+
+.sec2 h1 {
+    background-color: rgb(243, 188, 9);
+    color: white;
+    line-height: 12vh;
+    font-size: 4vmax;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.sec2 p {
+    background-color: rgb(243, 188, 9);
+    color:white;
+    font-size: 1.7vmax;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    line-height: 4.5vh;
+}
+
+
+.infobox1{
+    background-color: rgb(243, 188, 9);
+    border-bottom-style: solid;
+}
+
+.infobox p{
+    position: relative;                                                                                                                                                              
+    top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);    
+}
+
+.infobox2{
+    border-bottom-style: none;
+}
+
+.infobox2 p{
+    border-bottom-style: none;
+    line-height: 10vh;
+}

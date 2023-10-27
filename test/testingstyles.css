@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.box-group, .boxes {
+    display: grid;
+    place-items: center;
+    width: 90vmin;
+    aspect-ratio: 9.5/5;
+}
+
+.boxes {
+    display: inline;
+    place-items: start;
+    border-radius: 1vw;
+    margin: 0 auto;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 204, 35);
+}
+
+.boxes:hover {
+    width: 94vmin;
+}
+
+.Left {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(.25,.1,.25,1);
+    display: inline;
+    transform: translateX(-150%) translateY(60%) rotate(-15deg);
+}
+
+.Right {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(.25,.1,.25,1);
+    display: inline;
+    transform: translateX(150%) translateY(60%) rotate(15deg);
+}
+
+.Front {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(.25,.1,.25,1);
+    display: inline;
+    transform: translateY(20%)
+}
+.InvisibleL {
+    display: inline;
+    transform: translateX(-300%) translateY(120%) rotate(-30deg);
+}
+
+.InvisibleR{
+    display: inline;
+    transform: translateX(300%) translateY(120%) rotate(30deg);
+}
+
+.Btitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    margin: 1.4vw;
+    margin-bottom: 1.8vw;
+    color: white;
+    background-color: rgba(0,0,0,0);
+}
+
+.boxes p{
+    text-align: center;
+    margin: 0 1vw;
+    background-color: rgba(0,0,0,0);
+    font-size: 1.2vw;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buttons {
+    width:30vw;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    border:none;
+    transition-duration: 0.3s;
+    font-size: 5vw;
+    color: rgb(255, 204, 35);
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color:#fff;
+    font-size: 5.5vw;
+}

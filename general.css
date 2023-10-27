@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: rgb(43, 45, 53);
+}
+
+body {
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #2b2d35;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #2b2d35;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 17px;
+    border: 0px solid #ffffff;
+  }
+
+.launchanimate {
+    display:absolute;
+    position:fixed;
+    transition-property: padding,height;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(.67,0,.22,.98);
+    border:solid;
+    border-color: #fff;
+    z-index: 25;
+    background-color: rgb(255, 204, 35);
+    transform: translateY(-44vh);
+    padding:100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.smallen {
+    overflow: hidden;
+    padding:clamp(1%, 2%, 3%);
+    height: clamp(1%, 2%, 3%);
+    position: fixed;
+}
+
+nav{
+    margin-bottom: 20%;
+    border-bottom: #fff;
+    border-bottom-style: solid;
+    z-index:25;
+    line-height: 15%;
+    background-color: rgb(255, 204, 35);
+    width: 100%;
+    top:0px;
+    position: fixed;
+    padding: 5px, 10px;
+}
+
+nav button{
+    cursor: pointer;
+    border-style: none;
+    transition-duration: 0.2s;
+    line-height: 3vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    float: right;
+    font-size: clamp(12px,21px, 30px);
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: rgb(255, 204, 35);
+    color: #fff;
+}
+
+nav button:hover{
+    background-color: #fff;
+    color: rgb(255, 204, 35);
+}
