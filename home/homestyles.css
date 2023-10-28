@@ -107,7 +107,7 @@ body {
     color:white;
     font-size: 1.7vmax;
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
-    line-height: 4.5vh;
+    line-height: 2.5vmax;
 }
 
 
@@ -116,18 +116,31 @@ body {
     border-bottom-style: solid;
 }
 
-.infobox p{
-    position: relative;                                                                                                                                                              
-    top: 50%; 
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);    
-}
-
 .infobox2{
     border-bottom-style: none;
 }
 
 .infobox2 p{
     border-bottom-style: none;
-    line-height: 10vh;
+    line-height: 7vmax;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(243, 188, 9);
+}
+
+.socials button{
+    border-style: none;
+    border: none;
+    background-color:rgb(243, 188, 9);
+    font-size: 2vmax;
+    height: 3vmax;
+    transition-duration: 0.2s;
+}
+
+.socials button:hover {
+    color:#fff;
+    font-size: 3vmax;
 }
