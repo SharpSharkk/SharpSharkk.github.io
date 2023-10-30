@@ -1,5 +1,5 @@
 const start = Date.now()
-const words = ["boba.", "one piece.", "chopper.", "keshi."];
+const words = ["Shahzaib", "A Programmer", "A Web Dev", "A Highschooler"];
 const element = document.getElementById("phrase");
 
 function sleep(ms) {
