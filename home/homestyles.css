@@ -80,10 +80,9 @@ body {
 }
 
 .sec2 {
-    display: grid;
-    grid-gap: 2vmax;
-    grid-template-columns: 53vmax 34vmax;
-    grid-template-rows: auto;
+    display: flex;
+    flex: 2 0.5;
+    flex-wrap: wrap;
     z-index: 3;
     background-color: rgb(243, 188, 9);    
     padding: 10vh 5vw;
@@ -114,6 +113,7 @@ body {
 .infobox1{
     background-color: rgb(243, 188, 9);
     border-bottom-style: solid;
+    width: 60%;
 }
 
 .infobox2{
@@ -133,11 +133,8 @@ body {
 }
 
 .socials a{
-    border-style: none;
-    border: none;
     background-color:rgb(243, 188, 9);
     font-size: 2vmax;
-    height: 3vmax;
     transition-duration: 0.1s;
 }
 
@@ -145,3 +142,45 @@ body {
     color:#fff;
     font-size: 2.5vmax;
 }
+
+@media only screen and (max-width: 600px) {
+    .goatwrapper{
+        display: none;
+    }
+
+    .typewriter{
+        display: none;
+    }
+
+    .sec2{
+        padding: 20px 20px;
+    }
+
+    .infobox1{
+        width:90%;
+    }
+
+    .infobox1 h1{
+        line-height: 120px;
+        font-size: 90px;
+    }
+
+    .infobox1 p{
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .socials a{
+        line-height: 105px;
+        font-size: 25px;
+    }
+
+    .infobox2 {
+        width: 90%;
+    }
+
+    .infobox2 h1{
+        line-height: 120px;
+        font-size: 60px;
+    }
+  }

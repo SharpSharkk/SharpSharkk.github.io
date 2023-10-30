@@ -23,7 +23,7 @@ body {
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 5px;
+    width: 0.3vmax;
   }
 
   *::-webkit-scrollbar-track {
@@ -56,9 +56,15 @@ body {
 
 .smallen {
     overflow: hidden;
-    padding:clamp(1%, 2%, 3%);
-    height: clamp(1%, 2%, 3%);
+    padding: 35px;
+    height: 35px;
     position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  .launchanimate {
+    opacity: 0;
+  }
 }
 
 nav{
