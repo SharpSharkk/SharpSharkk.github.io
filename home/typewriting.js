@@ -1,6 +1,7 @@
 const start = Date.now()
-const words = ["Shahzaib", "A Programmer", "A Web Dev", "A Highschooler"];
+const words = ["Shahzaib!", "A Programmer.", "A Web Dev.", "A Highschooler."];
 const element = document.getElementById("phrase");
+
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -34,4 +35,11 @@ const writeloop1 = async () => {
     }
 }
 
-writeloop1();
+const singleword = async () => {
+    let word = words[0]
+    element.innerText = word
+}
+
+window.innerWidth > 600
+    ? (writeloop1())
+    : (singleword());
